@@ -1,3 +1,8 @@
+# api.py
+# Author: Amal Alex
+# Date: September 7, 2023
+# Description: This api demonstrates the api functions.
+
 import os
 import uuid
 import json
@@ -12,7 +17,7 @@ from flask import session
 from flask_cors import CORS
 from flask import jsonify as _json
 
-# from werkzeug.security import get_password_hash
+" from werkzeug.security import get_password_hash "
 from werkzeug.security import check_password_hash
 from werkzeug.utils import secure_filename
 
@@ -23,7 +28,7 @@ from code import Encrypt, Decrypt
 from image import Qr_Generation, Write_to_Metadata, Read_to_MetaData
 from storage import Write_to_Database, Read_from_Database, Write_key_Status
 
-
+# database connection
 connection = sqlite3.connect(constant.DB_NAME, check_same_thread=False)
 
 app = Flask(__name__)
@@ -31,6 +36,7 @@ CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 app.secret_key = constant.SESSION_SECRET
 
+# api for user login
 @app.route("/login", methods=['POST', 'GET'])
 def login():
     if request.method=='POST':
@@ -52,6 +58,7 @@ def login():
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
 
+# api for encrypt a QR code 
 @app.route("/encrypt", methods=['POST'])
 @logged_in
 def encrypt_post():
@@ -75,6 +82,7 @@ def encrypt_post():
             'opr': 'encrypt'
         })
 
+# api for preview the QR code after encryption
 @app.route('/encrypt/preview/<filename>', methods=['GET'])
 @logged_in
 def preview(filename):
@@ -82,6 +90,7 @@ def preview(filename):
     # print(filename, "This is file name...!")
     return send_from_directory(constant.PNG_PATH, filename + '.png')
 
+# api for download the QR code after encryption
 @app.route('/encrypt/download/<filename>', methods=['GET'])
 @logged_in
 def download(filename):
@@ -91,6 +100,7 @@ def allowed_file(filename):
     return '.' in filename and \
         filename.rsplit('.', 1)[1].lower() in constant.ALLOWED_EXTENSIONS
 
+#api for upload the encrypted QR code for decryption process
 @app.route("/decrypt/upload", methods=['POST'])
 @logged_in
 def upload_image():
@@ -125,6 +135,7 @@ def upload_image():
         'opr': 'decrypt'
     })
 
+#api for user logout
 @app.route("/logout", methods=['GET'])
 def logout():
     session.pop('username', None)
