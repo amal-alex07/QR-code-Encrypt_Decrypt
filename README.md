@@ -14,3 +14,7 @@ The app features end-to-end encryption for privacy
 - Angular 7
 - HTML/CSS
 - SQL
+
+**Apps:**
+- qr (Contains Backend Python Flask)
+- project front (Contains project Frontend - Angular 7)
