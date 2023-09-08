@@ -1,14 +1,20 @@
+# driver.py
+# Author: Amal Alex
+# Date: September 8, 2023
+# Description: This driver.py file demonstrates the Key generation and key validation process.
+
 import uuid
 import constant
 from code import Encrypt, Decrypt
 from image import Qr_Generation, Write_to_Metadata, Read_to_MetaData
 from storage import Write_to_Database, Read_from_Database, Write_key_Status
 
+# msg contains the confidential data need to be encrypt 
+msg = "Hello Mr.Hacker, How are you?"
+# key is main actor in this process, helps to encrypt the data, also need the same key at the decrypt time 
+key = "hack123456789"
 
-msg = "Hello Mrs. Elza, How are you?"
-key = "kelv123456789"
-
-user_name = "kelvinjose"
+user_name = "hacker"
 file_uuid = str(uuid.uuid4())
 
 u = Encrypt(user_name, key, constant.PADDING_SIZE)
