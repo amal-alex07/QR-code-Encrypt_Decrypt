@@ -39,3 +39,23 @@ Use these credentials to log in and perform encryption and decryption operations
 1. Start the backend Flask application in the `qr` directory.
 2. Launch the frontend Angular application by following the instructions in the README file in the `project front` directory.
 3. Access the application at http://localhost:4200.
+
+
+## Screenshots
+
+<div style="display: flex; flex-direction: row;">
+  <h4>1. Login</h4>
+    <img src="https://github.com/amal-alex07/QR-code-Encrypt_Decrypt/blob/main/screenshots/Login.png" alt="login" width="800">
+  <h4>2. Dashboard</h4>
+    <img src="https://github.com/amal-alex07/QR-code-Encrypt_Decrypt/blob/main/screenshots/Dashboard.png" alt="Dashboard" width="800">
+  <h4>3. Encrypt</h4>
+    <img src="https://github.com/amal-alex07/QR-code-Encrypt_Decrypt/blob/main/screenshots/Encrypt.png" alt="Encrypt" width="800">
+  <h4>4. Preview and Download</h4>
+    <img src="https://github.com/amal-alex07/QR-code-Encrypt_Decrypt/blob/main/screenshots/Preview%20and%20download.png" alt="Preview and Download" width="800">
+  <h4>5. Download</h4>
+    <img src="https://github.com/amal-alex07/QR-code-Encrypt_Decrypt/blob/main/screenshots/download.png" alt="Download" width="800">
+  <h4>6. Decrypt</h4>
+    <img src="https://github.com/amal-alex07/QR-code-Encrypt_Decrypt/blob/main/screenshots/Decrypt.png" alt="Decrypt" width="800">
+  <h4>7. Decrypt Screen</h4>
+    <img src="https://github.com/amal-alex07/QR-code-Encrypt_Decrypt/blob/main/screenshots/decrypted%20screen.png" alt="Decrypt Screen" width="800">
+</div>
