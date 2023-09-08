@@ -1,3 +1,8 @@
+# constant.py
+# Author: Amal Alex
+# Date: September 8, 2023
+# Description: This constant.py demonstrates the Constants and global variables .
+
 PADDING = "*"
 URL = "www.swansea.ac.uk/"
 

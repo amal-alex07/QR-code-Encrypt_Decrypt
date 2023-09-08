@@ -1,3 +1,8 @@
+# decors.py
+# Author: Amal Alex
+# Date: September 8, 2023
+# Description: This decors.py demonstrates the user authorization.
+
 import json
 from flask import session
 from functools import wraps
