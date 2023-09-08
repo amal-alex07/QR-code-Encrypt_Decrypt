@@ -1,0 +1,23 @@
+
+<div class="encrpt-wrapper">
+    <div class="card">
+        <div class="card-body">
+            <form class="form-signin"   (ngSubmit)="encription()">
+                <h1 class="h3 mb-3 font-weight-normal">Encryption</h1>
+                <label for="key" class="sr-only">Message</label>
+                <input type="text" [(ngModel)]="message" id="en" class="form-control" name="msg" >
+                <label for="key" class="sr-only">key</label>
+                <input type="any" [(ngModel)]="key"  id="key" class="form-control" name="key" >
+
+                    <div class="row">
+                        <input type="submit" value="Submit" class="btn btn-primary">
+                    </div>
+               
+
+              
+            </form>
+        </div>
+    </div>
+</div>
+  
+  

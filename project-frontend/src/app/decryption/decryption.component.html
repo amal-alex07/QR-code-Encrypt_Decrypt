@@ -1,0 +1,15 @@
+<div class="decrpt-wrapper">
+    <div class="card">
+        <div class="card-body">
+            <form class="form-signin" (ngSubmit)="decription()"  #en="ngForm">
+                <h1 class="h3 mb-3 font-weight-normal">Decryption</h1>
+                <label for="key" class="sr-only">File</label>
+                <input type="file"  (change)="onChange($event)" [(ngModel)]="image" class="form-control-file">
+                <label for="key" class="sr-only">key</label>
+                <input type="any" id="key"  [(ngModel)]="key" class="form-control" name="password" 
+                    autocomplete="on" ngModel required>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Decrypt</button>
+            </form>
+        </div>
+    </div>
+</div>
