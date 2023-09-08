@@ -58,4 +58,8 @@ Use these credentials to log in and perform encryption and decryption operations
     <img src="https://github.com/amal-alex07/QR-code-Encrypt_Decrypt/blob/main/screenshots/Decrypt.png" alt="Decrypt" width="800">
   <h4>7. Decrypt Screen</h4>
     <img src="https://github.com/amal-alex07/QR-code-Encrypt_Decrypt/blob/main/screenshots/decrypted%20screen.png" alt="Decrypt Screen" width="800">
+  <h4>8. Deployment Frontend</h4>
+    <img src="https://github.com/amal-alex07/QR-code-Encrypt_Decrypt/blob/main/screenshots/Deployment_frontend.png" alt="Deployment_frontend" width="800">
+  <h4>9. Deployment Backend</h4>
+    <img src="https://github.com/amal-alex07/QR-code-Encrypt_Decrypt/blob/main/screenshots/Deployment_backend.png" alt="Deployment_backend" width="800">
 </div>
